@@ -96,17 +96,21 @@ footer {
 }
 form {
     background: #503114;
-    padding: 2em;
+    padding: 2em 1em;
     color: white;
     border-radius: 10px;
     max-width: 500px;
     margin: auto;
+    box-sizing: border-box;
+    width: 90%;
 }
+
 form input, form button {
     width: 100%;
     margin-bottom: 1em;
     padding: 0.8em;
     font-size: 1em;
+    box-sizing: border-box;
 }
 form button {
     background: green;
@@ -189,14 +193,18 @@ section p, section li {
   }
 
   .boton-video {
-    display: inline-block;
-    font-size: 1em;
-    padding: 0.5em 1em;
-    margin-top: 1em;
-    white-space: normal;
-    word-break: break-word;
-    text-align: center;
-  }
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  margin-top: 1em;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
   .cards-container {
     flex-direction: column;
@@ -209,8 +217,18 @@ section p, section li {
   }
 
   form {
+    max-width: 500px;
     width: 90%;
-  }
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+  form input, form button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8em;
+}
   .table-layout {
     display: none; /* Oculta la tabla en celulares */
   }
@@ -234,6 +252,12 @@ section p, section li {
     margin-bottom: 0.5em;
   }
 }
+@media (min-width: 769px) {
+  .mobile-cards {
+    display: none;
+  }
+}
+
 
 
 
