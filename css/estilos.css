@@ -137,6 +137,9 @@ form button {
 .modal-content.error {
     border-left: 5px solid red;
 }
+section p, section li {
+  text-align: justify;
+}
 /* === RESPONSIVE DESIGN PARA CELULARES === */
 @media (max-width: 768px) {
   header {
@@ -186,10 +189,13 @@ form button {
   }
 
   .boton-video {
+    display: inline-block;
     font-size: 1em;
     padding: 0.5em 1em;
+    margin-top: 1em;
     white-space: normal;
     word-break: break-word;
+    text-align: center;
   }
 
   .cards-container {
@@ -205,4 +211,29 @@ form button {
   form {
     width: 90%;
   }
+  .table-layout {
+    display: none; /* Oculta la tabla en celulares */
+  }
+
+  .mobile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .mobile-card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 10px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  .mobile-card img {
+    max-width: 100px;
+    margin-bottom: 0.5em;
+  }
 }
+
+
+
