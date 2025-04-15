@@ -136,47 +136,71 @@ form button {
     border-left: 5px solid red;
 }
 /* === RESPONSIVE DESIGN PARA CELULARES === */
-@media screen and (max-width: 768px) {
-
-  body {
-    font-size: 16px;
-    padding: 1em;
-  }
-
-  header, nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.5em 0;
-  }
-
-  .footer-grid {
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .footer-grid div {
-    flex: 1 1 100%;
-    margin-bottom: 1em;
+  nav ul {
+    flex-direction: column;
+    padding: 0;
   }
 
-  .hero {
-    padding: 3em 1em;
+  nav li {
+    margin: 0.5em 0;
   }
 
-  .table-layout td {
-    display: block;
+  .hero-text h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .section {
+    padding: 1em;
+  }
+
+  .section img {
+    width: 90%;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 1em 0;
+    width: 90%;
+  }
+
+  .boton-video {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .card {
     width: 100%;
-    padding: 1em 0;
+    padding: 1em;
   }
 
   form {
     width: 90%;
-    margin: auto;
   }
 }
-
