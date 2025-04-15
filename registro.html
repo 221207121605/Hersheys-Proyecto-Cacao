@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Hershey's Proyecto Cacao</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <img src="images/1.png" alt="Logo">
+    <strong>Hershey's Proyecto Cacao</strong>
+</header>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="registro.html">Registro</a>
+</nav>
+
+<section>
+    <h2>Realiza tu registro</h2>
+    <form id="registroForm">
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" required>
+        <label>Número celular:</label>
+        <input type="text" name="celular" required>
+        <label>Clave:</label>
+        <input type="text" name="clave" required>
+        <button type="button" onclick="registrar()">LISTO</button>
+    </form>
+    <p style="text-align:center;">Todo en base a tu esfuerzo, tú puedes lograrlo.</p>
+</section>
+
+<div id="modal" class="modal" onclick="cerrarModal()">
+    <div id="modal-content" class="modal-content"></div>
+</div>
+
+
+<footer>
+    <h3>HERSHEY</h3>
+    <div class="footer-grid">
+        <div>
+            <strong>CHOCOLATES</strong><br>
+            <p>Hershey’s<br> Kisses<br> Bites<br> Snack Mix<br> Reese’s<br> Special Dark<br> Repostería</p>
+        </div>
+        <div>
+            <strong>BEBIDAS</strong><br>
+            <p>Leches Hershey’s</p>
+            <strong>DULCES Y ENCHILADOS</strong><br>
+            <p>Jolly Rancher<br> Pelon Pelo Rico</p>
+        </div>
+        <div>
+            <strong>MENTAS Y GOMAS DE MASCAR</strong><br>
+            <p>Ice breakers</p>
+        </div>
+        <div>
+            <strong>NUESTRAS OFICINAS</strong><br>
+            <p>HERSHEY MÉXICO S.A. DE C.V.<br>
+            CARR. GUADALAJARA - EL CASTILLO KM 8.05<br>
+            C.P. 45680 EL SALTO, JALISCO<br>
+            LADA SIN COSTO: 001 800 956 9964</p>
+        </div>
+        <div>
+            <strong>SÍGUENOS</strong><br>
+            <a href="https://www.hersheyland.mx/" target="_blank">Página oficial</a><br>
+            <a href="https://www.facebook.com/HersheysMX/?ref=ts&fref=ts" target="_blank">Facebook</a><br>
+            <p>Contacto</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+header {
+    background-color: #503114;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 40px;
+    margin-right: 1em;
+}
+nav {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 0.5em 0;
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #503114;
+    font-weight: bold;
+}
+h1, h2, h3 {
+    color: #503114;
+    font-family: 'Georgia', serif;
+}
+section {
+    padding: 2em;
+}
+footer {
+    background-color: #503114;
+    color: white;
+    padding: 2em;
+    font-size: 0.9em;
+}
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.footer-grid div {
+    flex: 1;
+    margin: 0.5em;
+}
+.footer-grid a {
+    color: white;
+    text-decoration: underline;
+}
+.hero {
+    background-image: url('../images/2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 6em 2em;
+    color: white;
+}
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.hero p {
+    font-style: italic;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+.callout {
+    background-color: #eee;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 1em;
+}
+.table-layout {
+    width: 100%;
+    margin-top: 2em;
+}
+.table-layout td {
+    vertical-align: top;
+    padding: 1em;
+}
+form {
+    background: #503114;
+    padding: 2em;
+    color: white;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+form input, form button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    font-size: 1em;
+}
+form button {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+.modal-content.success {
+    border-left: 5px solid green;
+}
+.modal-content.error {
+    border-left: 5px solid red;
+}
